@@ -53,7 +53,7 @@ export default function CoreValues() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
             Our <span className="gradient-text">Core Values</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -77,7 +77,7 @@ export default function CoreValues() {
                 <div className={`w-16 h-16 bg-gradient-to-br ${value.color} rounded-2xl flex items-center justify-center mx-auto mb-6`}>
                   <Icon className="text-white" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 text-gray-900">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">

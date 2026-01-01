@@ -14,7 +14,7 @@ export default function FounderSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4">
             Leadership <span className="gradient-text">Team</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -37,7 +37,7 @@ export default function FounderSection() {
                 </div>
               </div>
               <div className="md:col-span-2">
-                <h3 className="text-3xl font-bold mb-2 text-gray-900">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 text-gray-900">
                   Expert Financial Advisory Team
                 </h3>
                 <p className="text-gray-600 mb-4">

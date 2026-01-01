@@ -19,7 +19,7 @@ export default function MissionVision() {
             <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6">
               <Target className="text-white" size={32} />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 md:mb-6 gradient-text">
               Our Mission
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -41,7 +41,7 @@ export default function MissionVision() {
             <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center mb-6">
               <Eye className="text-white" size={32} />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 gradient-text">
+            <h2 className="text-xl sm:text-2xl md:text-4xl font-bold mb-4 md:mb-6 gradient-text">
               Our Vision
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">

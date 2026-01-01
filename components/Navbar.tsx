@@ -38,20 +38,20 @@ export default function Navbar() {
       }`}
     >
       <div className="container-custom">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20 md:h-32">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+            <div className="relative w-12 h-12 md:w-28 md:h-28 flex-shrink-0">
               <Image
                 src="/logo1.png"
                 alt="The Vega Wealth Logo"
                 fill
                 className="object-contain transition-transform duration-300 group-hover:scale-105"
                 priority
-                sizes="(max-width: 640px) 64px, 80px"
+                sizes="(max-width: 768px) 48px, 112px"
               />
             </div>
-            <div className="hidden sm:block">
+            <div className="hidden md:block">
               <div className="text-2xl font-extrabold gradient-text leading-tight">The Vega Wealth</div>
               <div className="text-xs text-gray-500 font-medium">Your Path to Prosperity</div>
             </div>

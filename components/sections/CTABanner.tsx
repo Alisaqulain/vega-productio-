@@ -20,10 +20,10 @@ export default function CTABanner() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-4xl mx-auto"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Ready to Start Your Journey to Prosperity?
           </h2>
-          <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-2xl text-white/90 mb-8 md:mb-10 leading-relaxed">
             Schedule a free consultation with our financial experts and discover how we can help you achieve your financial goals.
           </p>
 

@@ -16,7 +16,7 @@ export default function WhatsAppButton() {
   return (
     <motion.button
       onClick={handleClick}
-      className="fixed bottom-24 right-6 z-40 bg-[#25D366] hover:bg-[#20BA5A] text-white p-4 rounded-full shadow-2xl hover:shadow-[#25D366]/50 transition-all duration-300 group"
+      className="fixed bottom-16 md:bottom-24 right-4 md:right-6 z-40 bg-[#25D366] hover:bg-[#20BA5A] text-white p-3 md:p-4 rounded-full shadow-2xl hover:shadow-[#25D366]/50 transition-all duration-300 group"
       whileHover={{ scale: 1.1, rotate: 5 }}
       whileTap={{ scale: 0.95 }}
       aria-label="Contact us on WhatsApp"
@@ -27,7 +27,7 @@ export default function WhatsAppButton() {
         viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="w-8 h-8"
+        className="w-6 h-6 md:w-8 md:h-8"
       >
         <path
           d="M16 0C7.164 0 0 7.164 0 16c0 2.825.744 5.475 2.041 7.771L0 32l8.479-1.988C10.648 31.287 13.214 32 16 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.341 0-4.542-.623-6.442-1.708l-.453-.271-4.69 1.099 1.121-4.573-.295-.469A13.26 13.26 0 012.667 16c0-7.364 5.97-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333z"

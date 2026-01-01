@@ -133,12 +133,12 @@ export default function Chatbot() {
       {!isOpen && (
         <motion.button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-6 right-6 z-40 bg-gradient-to-br from-primary-blue to-primary-green text-white p-5 rounded-full shadow-2xl hover:shadow-primary-blue/50 transition-all duration-300 group"
+          className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-40 bg-gradient-to-br from-primary-blue to-primary-green text-white p-4 md:p-5 rounded-full shadow-2xl hover:shadow-primary-blue/50 transition-all duration-300 group"
           whileHover={{ scale: 1.1, rotate: [0, -10, 10, -10, 0] }}
           whileTap={{ scale: 0.95 }}
           aria-label="Open chatbot"
         >
-          <Bot size={28} className="text-white" />
+          <Bot size={24} className="md:w-7 md:h-7 text-white" />
           <span className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-gray-900 text-white text-sm px-4 py-2 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg">
             Chat with us
           </span>
@@ -152,7 +152,7 @@ export default function Chatbot() {
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-6 right-6 z-50 w-96 h-[600px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-[calc(100vw-2rem)] max-w-[calc(100vw-2rem)] md:w-96 md:max-w-96 h-[calc(100vh-8rem)] max-h-[600px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
           >
             {/* Header */}
             <div className="bg-gradient-primary text-white p-4 flex items-center justify-between">

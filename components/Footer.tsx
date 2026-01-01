@@ -27,13 +27,13 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <Link href="/" className="flex items-center space-x-3 mb-4">
-              <div className="relative w-16 h-16 sm:w-20 sm:h-20 flex-shrink-0">
+              <div className="relative w-12 h-12 md:w-24 md:h-24 flex-shrink-0">
                 <Image
                   src="/logo1.png"
                   alt="The Vega Wealth Logo"
                   fill
                   className="object-contain"
-                  sizes="(max-width: 640px) 64px, 80px"
+                  sizes="(max-width: 768px) 48px, 96px"
                 />
               </div>
               <div>
@@ -134,7 +134,7 @@ export default function Footer() {
                   href="mailto:info@vegawalth.com"
                   className="text-sm hover:text-primary-blue transition-colors"
                 >
-                  info@vegawalth.com
+                  Accounts@thevegawealth.com
                 </a>
               </li>
             </ul>
