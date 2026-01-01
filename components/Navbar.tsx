@@ -44,7 +44,7 @@ export default function Navbar() {
             <div className="relative w-12 h-12 md:w-28 md:h-28 flex-shrink-0">
               <Image
                 src="/logo1.png"
-                alt="The Vega Wealth Logo"
+                alt="The Vega Wealth - Financial Advisory Dubai | Wealth Management Logo"
                 fill
                 className="object-contain transition-transform duration-300 group-hover:scale-105"
                 priority

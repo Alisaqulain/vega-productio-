@@ -30,7 +30,7 @@ export default function Footer() {
               <div className="relative w-12 h-12 md:w-24 md:h-24 flex-shrink-0">
                 <Image
                   src="/logo1.png"
-                  alt="The Vega Wealth Logo"
+                  alt="The Vega Wealth - Financial Advisory Dubai | Wealth Management Logo"
                   fill
                   className="object-contain"
                   sizes="(max-width: 768px) 48px, 96px"
@@ -142,17 +142,26 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm">
             © {currentYear} The Vega Wealth. All rights reserved.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <Link href="/privacy" className="text-sm hover:text-primary-blue transition-colors">
               Privacy Policy
             </Link>
             <Link href="/terms" className="text-sm hover:text-primary-blue transition-colors">
               Terms of Service
             </Link>
+            <span className="text-sm text-gray-500">•</span>
+            <a
+              href="https://www.devspheresolutions.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm hover:text-primary-blue transition-colors"
+            >
+              Developed by <span className="font-semibold text-primary-blue">DevSphere Solutions</span>
+            </a>
           </div>
         </div>
       </div>

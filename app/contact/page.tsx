@@ -4,11 +4,26 @@ import ContactInfo from '@/components/ContactInfo'
 import MapEmbed from '@/components/MapEmbed'
 
 export const metadata: Metadata = {
-  title: 'Contact Us - The Vega Wealth | Dubai Financial Advisory',
-  description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai, UAE. Schedule a consultation today.',
+  title: 'Contact Us - The Vega Wealth | Dubai Financial Advisory | Free Consultation',
+  description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai, UAE. Schedule a free consultation today. Call +971 50 123 4567 or email Accounts@thevegawealth.com',
+  keywords: [
+    'Contact Financial Advisor Dubai',
+    'Financial Advisory Dubai Contact',
+    'Wealth Management Dubai Contact',
+    'Financial Planner Dubai Phone',
+    'Dubai Financial Services Contact',
+    'Financial Advisor Dubai Email',
+    'Free Financial Consultation Dubai',
+    'Schedule Financial Consultation Dubai',
+  ],
   openGraph: {
-    title: 'Contact Us - The Vega Wealth',
-    description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai.',
+    title: 'Contact Us - The Vega Wealth | Dubai Financial Advisory',
+    description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai, UAE. Schedule a free consultation today.',
+    url: 'https://vegawalth.com/contact',
+    images: ['/logo1.png'],
+  },
+  alternates: {
+    canonical: 'https://vegawalth.com/contact',
   },
 }
 

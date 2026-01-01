@@ -9,13 +9,13 @@
   
   body {
     @apply text-gray-900 relative;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    /* Premium modern gradient background */
+    /* Optimized gradient background - single layer */
     background: linear-gradient(
       135deg,
       #FFFFFF 0%,
@@ -24,11 +24,14 @@
       #FFFBEB 75%,
       #FFFFFF 100%
     );
-    background-attachment: fixed;
-    background-size: 400% 400%;
+    background-attachment: scroll;
+    background-size: 200% 200%;
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
   }
   
+  /* Simplified overlay - single pseudo-element */
   body::before {
     content: '';
     position: fixed;
@@ -36,40 +39,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    /* Modern subtle texture overlay */
+    /* Combined subtle texture overlay - optimized */
     background-image: 
-      radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.03) 0%, transparent 50%),
-      radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.02) 0%, transparent 50%);
+      radial-gradient(circle at 20% 30%, rgba(14, 165, 233, 0.02) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(16, 185, 129, 0.02) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
-  }
-  
-  body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* Financial pattern overlay */
-    background-image: 
-      repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 100px,
-        rgba(14, 165, 233, 0.01) 100px,
-        rgba(14, 165, 233, 0.01) 102px
-      ),
-      repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 100px,
-        rgba(16, 185, 129, 0.01) 100px,
-        rgba(16, 185, 129, 0.01) 102px
-      );
-    pointer-events: none;
-    z-index: 0;
+    will-change: auto;
   }
 }
 

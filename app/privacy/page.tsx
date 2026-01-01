@@ -4,10 +4,27 @@ import { Shield, Lock, Eye, FileCheck } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - The Vega Wealth | Data Protection & Privacy',
-  description: 'Privacy Policy for The Vega Wealth. Learn how we protect and handle your personal information in compliance with UAE data protection regulations.',
+  description: 'Privacy Policy for The Vega Wealth. Learn how we protect and handle your personal information in compliance with UAE data protection regulations. Your financial data security is our priority.',
+  keywords: [
+    'Privacy Policy The Vega Wealth',
+    'Data Protection Dubai',
+    'Financial Data Security Dubai',
+    'Privacy Policy Financial Advisor Dubai',
+    'UAE Data Protection',
+    'Financial Privacy Dubai',
+  ],
   openGraph: {
-    title: 'Privacy Policy - The Vega Wealth',
-    description: 'Privacy Policy for The Vega Wealth. Learn how we protect your personal information.',
+    title: 'Privacy Policy - The Vega Wealth | Data Protection & Privacy',
+    description: 'Privacy Policy for The Vega Wealth. Learn how we protect your personal information in compliance with UAE data protection regulations.',
+    url: 'https://vegawalth.com/privacy',
+    images: ['/logo1.png'],
+  },
+  alternates: {
+    canonical: 'https://vegawalth.com/privacy',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 

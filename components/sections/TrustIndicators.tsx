@@ -40,7 +40,7 @@ export default function TrustIndicators() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {indicators.map((indicator, index) => {
             const Icon = indicator.icon
             return (

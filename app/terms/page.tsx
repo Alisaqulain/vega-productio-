@@ -4,10 +4,26 @@ import { FileText, Scale, AlertCircle, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Terms of Service - The Vega Wealth | Terms & Conditions',
-  description: 'Terms of Service for The Vega Wealth. Read our terms and conditions for using our financial advisory services in Dubai, UAE.',
+  description: 'Terms of Service for The Vega Wealth. Read our terms and conditions for using our financial advisory services in Dubai, UAE. Understand your rights and responsibilities.',
+  keywords: [
+    'Terms of Service The Vega Wealth',
+    'Financial Advisory Terms Dubai',
+    'Terms and Conditions Financial Advisor',
+    'Wealth Management Terms Dubai',
+    'Financial Services Terms UAE',
+  ],
   openGraph: {
-    title: 'Terms of Service - The Vega Wealth',
-    description: 'Terms of Service for The Vega Wealth. Read our terms and conditions.',
+    title: 'Terms of Service - The Vega Wealth | Terms & Conditions',
+    description: 'Terms of Service for The Vega Wealth. Read our terms and conditions for using our financial advisory services in Dubai, UAE.',
+    url: 'https://vegawalth.com/terms',
+    images: ['/logo1.png'],
+  },
+  alternates: {
+    canonical: 'https://vegawalth.com/terms',
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 }
 
