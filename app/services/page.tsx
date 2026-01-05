@@ -1,10 +1,15 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import FinancialPlanning from '@/components/services/FinancialPlanning'
 import InvestmentAdvisory from '@/components/services/InvestmentAdvisory'
 import InsurancePlanning from '@/components/services/InsurancePlanning'
 import EstatePlanning from '@/components/services/EstatePlanning'
 import MortgageAdvisory from '@/components/services/MortgageAdvisory'
 import PageHeader from '@/components/PageHeader'
+
+const PageBackgroundImage = dynamic(() => import('@/components/PageBackgroundImage'), {
+  ssr: false,
+})
 
 export const metadata: Metadata = {
   title: 'Our Services - The Vega Wealth | Financial Advisory Services Dubai',
@@ -36,18 +41,26 @@ export const metadata: Metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="pt-36 md:pt-44">
-      <PageHeader 
-        title="Our Services"
-        subtitle="Comprehensive financial solutions tailored to your unique needs"
-        dubaiImage="/dubai2.png"
+    <>
+      {/* Premium background image - no video */}
+      <PageBackgroundImage 
+        imageSrc="/meeting 4.png"
+        overlay="light"
+        overlayOpacity={0.4}
       />
-      <FinancialPlanning />
-      <InvestmentAdvisory />
-      <InsurancePlanning />
-      <EstatePlanning />
-      <MortgageAdvisory />
-    </div>
+      <div className="pt-36 md:pt-44 relative z-10">
+        <PageHeader 
+          title="Our Services"
+          subtitle="Comprehensive financial solutions tailored to your unique needs"
+          dubaiImage="/dubai2.png"
+        />
+        <FinancialPlanning />
+        <InvestmentAdvisory />
+        <InsurancePlanning />
+        <EstatePlanning />
+        <MortgageAdvisory />
+      </div>
+    </>
   )
 }
 

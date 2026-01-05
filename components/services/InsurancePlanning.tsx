@@ -3,6 +3,11 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Shield, CheckCircle, ArrowRight } from 'lucide-react'
+import dynamic from 'next/dynamic'
+
+const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground'), {
+  ssr: false,
+})
 
 const benefits = [
   'Life insurance planning and coverage analysis',
@@ -15,8 +20,16 @@ const benefits = [
 
 export default function InsurancePlanning() {
   return (
-    <section id="insurance-planning" className="section-padding">
-      <div className="container-custom">
+    <section id="insurance-planning" className="relative section-padding overflow-hidden">
+      {/* Parallax background - clearly visible */}
+      <ParallaxBackground
+        imageSrc="/dubai3.png"
+        blur={2}
+        overlayOpacity={0.25}
+        speed={0.3}
+      />
+      
+      <div className="container-custom relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -69,21 +82,21 @@ export default function InsurancePlanning() {
             transition={{ duration: 0.8 }}
             className="relative"
           >
-            <div className="glass-card p-8 rounded-2xl">
+            <div className="bg-white/80 backdrop-blur-lg border border-white/50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="space-y-6">
-                <div className="bg-gradient-to-br from-primary-blue/10 to-primary-green/10 p-6 rounded-xl">
+                <div className="bg-gradient-to-br from-primary-blue/5 to-primary-green/5 backdrop-blur-sm p-6 rounded-xl border border-white/30">
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Comprehensive Coverage</h3>
                   <p className="text-gray-600">
                     Protection for life, health, property, and business assets through carefully selected insurance products.
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-primary-green/10 to-primary-blue/10 p-6 rounded-xl">
+                <div className="bg-gradient-to-br from-primary-green/5 to-primary-blue/5 backdrop-blur-sm p-6 rounded-xl border border-white/30">
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Cost Optimization</h3>
                   <p className="text-gray-600">
                     We compare options from multiple providers to ensure you get the best coverage at the most competitive rates.
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-primary-blue/10 to-primary-green/10 p-6 rounded-xl">
+                <div className="bg-gradient-to-br from-primary-blue/5 to-primary-green/5 backdrop-blur-sm p-6 rounded-xl border border-white/30">
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Regular Reviews</h3>
                   <p className="text-gray-600">
                     Annual policy reviews to ensure your coverage remains adequate as your circumstances change.

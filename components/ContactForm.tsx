@@ -37,14 +37,16 @@ export default function ContactForm() {
       const data = await response.json()
 
       if (response.ok) {
-        // Track form submission
+        // Track form submission event (for GA4/GTM analytics only)
+        // Note: Google Ads conversion will fire on thank-you page for accuracy
         trackFormSubmission('contact_form', {
           name: formData.name,
           email: formData.email,
           phone: formData.phone,
+          fire_conversion: false, // Don't fire conversion here, let thank-you page handle it
         })
 
-        // Redirect to thank-you page
+        // Redirect to thank-you page (conversion fires there)
         router.push('/thank-you')
       } else {
         setStatus({

@@ -1,13 +1,32 @@
 'use client'
 
+import { useEffect } from 'react'
 import Link from 'next/link'
 import { CheckCircle, ArrowRight, Phone, MessageCircle } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { trackFormSubmission, trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking'
 
 // Note: Metadata cannot be exported from client components
 // SEO is handled via layout.tsx
 
 export default function ThankYouPage() {
+  // Fire form conversion tracking when page loads
+  // This ensures conversion only fires after successful form submission and redirect
+  useEffect(() => {
+    // Track form conversion on thank-you page (primary conversion point)
+    trackFormSubmission('contact_form', {
+      page: 'thank_you',
+      conversion_type: 'form_submission',
+    })
+  }, [])
+
+  const handlePhoneClick = () => {
+    trackPhoneClick('+971501234567')
+  }
+
+  const handleWhatsAppClick = () => {
+    trackWhatsAppClick('thank_you_page')
+  }
   return (
     <div className="min-h-screen flex items-center justify-center pt-32 md:pt-40 pb-16 px-4">
       <div className="max-w-2xl w-full text-center">
@@ -68,6 +87,7 @@ export default function ThankYouPage() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="tel:+971501234567"
+            onClick={handlePhoneClick}
             className="btn-primary inline-flex items-center justify-center"
           >
             <Phone className="mr-2" size={20} />
@@ -75,6 +95,7 @@ export default function ThankYouPage() {
           </a>
           <a
             href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971501234567'}?text=${encodeURIComponent("Hello Vega Wealth, I just submitted an enquiry and would like to speak with you.")}`}
+            onClick={handleWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 inline-flex items-center justify-center shadow-lg hover:shadow-xl"

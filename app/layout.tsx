@@ -26,6 +26,9 @@ const FinancialBackground = dynamic(() => import('@/components/FinancialBackgrou
 const MobileStickyCTA = dynamic(() => import('@/components/MobileStickyCTA'), {
   ssr: false,
 })
+const LoadingScreen = dynamic(() => import('@/components/LoadingScreen'), {
+  ssr: false,
+})
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -308,6 +311,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} ${inter.className}`}>
+        <LoadingScreen />
         <GoogleTagManager />
         <GoogleAnalytics />
         <FinancialBackground />

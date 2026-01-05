@@ -3,6 +3,11 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TrendingUp, CheckCircle, ArrowRight } from 'lucide-react'
+import dynamic from 'next/dynamic'
+
+const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground'), {
+  ssr: false,
+})
 
 const benefits = [
   'Portfolio construction and asset allocation',
@@ -15,8 +20,16 @@ const benefits = [
 
 export default function InvestmentAdvisory() {
   return (
-    <section id="investment-advisory" className="section-padding">
-      <div className="container-custom">
+    <section id="investment-advisory" className="relative section-padding overflow-hidden">
+      {/* Parallax background - clearly visible */}
+      <ParallaxBackground
+        imageSrc="/dubai2.png"
+        blur={2}
+        overlayOpacity={0.25}
+        speed={0.3}
+      />
+      
+      <div className="container-custom relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -25,21 +38,21 @@ export default function InvestmentAdvisory() {
             transition={{ duration: 0.8 }}
             className="order-2 md:order-1"
           >
-            <div className="glass-card p-8 rounded-2xl">
+            <div className="bg-white/80 backdrop-blur-lg border border-white/50 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="space-y-6">
-                <div className="bg-gradient-to-br from-primary-blue/10 to-primary-green/10 p-6 rounded-xl">
+                <div className="bg-gradient-to-br from-primary-blue/5 to-primary-green/5 backdrop-blur-sm p-6 rounded-xl border border-white/30">
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Global Opportunities</h3>
                   <p className="text-gray-600">
                     Access to international markets and investment opportunities across stocks, bonds, real estate, and alternative investments.
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-primary-green/10 to-primary-blue/10 p-6 rounded-xl">
+                <div className="bg-gradient-to-br from-primary-green/5 to-primary-blue/5 backdrop-blur-sm p-6 rounded-xl border border-white/30">
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Risk Management</h3>
                   <p className="text-gray-600">
                     Sophisticated risk management strategies to protect your capital while pursuing growth opportunities.
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-primary-blue/10 to-primary-green/10 p-6 rounded-xl">
+                <div className="bg-gradient-to-br from-primary-blue/5 to-primary-green/5 backdrop-blur-sm p-6 rounded-xl border border-white/30">
                   <h3 className="font-semibold text-lg mb-2 text-gray-900">Data-Driven Decisions</h3>
                   <p className="text-gray-600">
                     Investment recommendations backed by comprehensive research and market analysis.

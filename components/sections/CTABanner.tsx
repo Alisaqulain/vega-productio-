@@ -4,15 +4,23 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 
-const DubaiBackground = dynamic(() => import('@/components/DubaiBackground'), {
+const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground'), {
   ssr: false,
 })
 
 export default function CTABanner() {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
-      {/* Premium dark executive gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-navy via-neutral-800 to-primary-navy">
+      {/* Parallax background - image clearly visible */}
+      <ParallaxBackground
+        imageSrc="/meeting 1.png"
+        blur={2}
+        overlayOpacity={0.25}
+        speed={0.25}
+      />
+      
+      {/* Dark overlay for text contrast - image still visible */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/40 via-neutral-800/35 to-primary-navy/40 z-[1]">
         {/* Subtle texture for depth */}
         <div 
           className="absolute inset-0 opacity-[0.02]"
@@ -22,21 +30,19 @@ export default function CTABanner() {
         />
       </div>
       
-      {/* Dubai background - dubai3.png with dark overlay */}
-      <DubaiBackground 
-        image="/dubai3.png" 
-        opacity={0.07} 
-        mobileOpacity={0.04}
-        blur={0}
-        gradientOverlay="dark"
-      />
-      
       <div className="container-custom relative z-20">
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: 'easeOut' }}
+          initial={{ opacity: 0, y: 50, scale: 0.95 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          viewport={{ once: false, margin: '-100px' }}
+          transition={{
+            duration: 1,
+            ease: [0.25, 0.1, 0.25, 1],
+          }}
+          whileHover={{
+            scale: 1.02,
+            transition: { duration: 0.3 },
+          }}
           className="text-center max-w-4xl mx-auto"
         >
           <h2 className="heading-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight">
@@ -46,12 +52,18 @@ export default function CTABanner() {
             Contact us to start building your financial future.
           </p>
 
-          <Link
-            href="/contact"
-            className="btn-primary inline-flex items-center justify-center text-base md:text-lg px-12 py-5 md:px-14 md:py-6 min-h-[56px] md:min-h-[64px]"
+          <motion.div
+            whileHover={{ scale: 1.05, y: -2 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 17 }}
           >
-            Get in Touch
-          </Link>
+            <Link
+              href="/contact"
+              className="btn-primary inline-flex items-center justify-center text-base md:text-lg px-12 py-5 md:px-14 md:py-6 min-h-[56px] md:min-h-[64px]"
+            >
+              Get in Touch
+            </Link>
+          </motion.div>
         </motion.div>
       </div>
     </section>

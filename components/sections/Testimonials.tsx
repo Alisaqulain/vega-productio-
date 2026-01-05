@@ -2,6 +2,11 @@
 
 import { motion } from 'framer-motion'
 import { Star, Quote } from 'lucide-react'
+import dynamic from 'next/dynamic'
+
+const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground'), {
+  ssr: false,
+})
 
 const testimonials = [
   {
@@ -56,8 +61,16 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="section-padding">
-      <div className="container-custom">
+    <section className="relative section-padding overflow-hidden">
+      {/* Parallax background - same style as services page */}
+      <ParallaxBackground
+        imageSrc="/meeting 6.png"
+        blur={2}
+        overlayOpacity={0.25}
+        speed={0.3}
+      />
+      
+      <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,10 +78,10 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20 md:mb-24"
         >
-          <h2 className="heading-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-neutral-800 mb-6">
+          <h2 className="heading-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-neutral-900 mb-6 font-bold">
             What Our Clients Say
           </h2>
-          <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-neutral-700 max-w-2xl mx-auto leading-relaxed font-semibold">
             Trusted by professionals, entrepreneurs, and investors across the UAE
           </p>
         </motion.div>
@@ -77,11 +90,21 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -5 }}
+              initial={{ opacity: 0, y: 40, rotateX: 10 }}
+              whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
+              viewport={{ once: false, margin: '-50px' }}
+              transition={{
+                duration: 0.8,
+                delay: index * 0.1,
+                ease: [0.25, 0.1, 0.25, 1],
+              }}
+              whileHover={{
+                y: -10,
+                rotateY: 3,
+                scale: 1.03,
+                transition: { duration: 0.4 },
+              }}
+              style={{ transformStyle: 'preserve-3d' }}
               className="glass-card p-6 rounded-2xl relative"
             >
               <Quote className="absolute top-6 right-6 text-primary-navy/10" size={40} />

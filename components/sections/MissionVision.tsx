@@ -4,29 +4,39 @@ import { motion } from 'framer-motion'
 import { Target, Eye } from 'lucide-react'
 import dynamic from 'next/dynamic'
 
-const DubaiBackground = dynamic(() => import('@/components/DubaiBackground'), {
+const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground'), {
   ssr: false,
 })
 
 export default function MissionVision() {
   return (
-    <section className="relative section-padding">
-      {/* Dubai background - dubai5.png */}
-      <DubaiBackground 
-        image="/dubai5.png" 
-        opacity={0.06} 
-        mobileOpacity={0.035}
-        blur={0}
-        gradientOverlay="light"
+    <section className="relative section-padding overflow-hidden">
+      {/* Parallax background - same style as services page */}
+      <ParallaxBackground
+        imageSrc="/meeting 7.png"
+        blur={2}
+        overlayOpacity={0.25}
+        speed={0.3}
       />
+      
       <div className="container-custom relative z-10">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Mission */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, x: -60, rotateY: -15 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            viewport={{ once: false, margin: '-50px' }}
+            transition={{
+              duration: 0.9,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
+            whileHover={{
+              y: -8,
+              rotateY: 2,
+              scale: 1.02,
+              transition: { duration: 0.4 },
+            }}
+            style={{ transformStyle: 'preserve-3d' }}
             className="glass-card p-8 md:p-12 rounded-2xl"
           >
             <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mb-6">
@@ -45,10 +55,20 @@ export default function MissionVision() {
 
           {/* Vision */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, x: 60, rotateY: 15 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            viewport={{ once: false, margin: '-50px' }}
+            transition={{
+              duration: 0.9,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
+            whileHover={{
+              y: -8,
+              rotateY: -2,
+              scale: 1.02,
+              transition: { duration: 0.4 },
+            }}
+            style={{ transformStyle: 'preserve-3d' }}
             className="glass-card p-8 md:p-12 rounded-2xl"
           >
             <div className="w-16 h-16 bg-gradient-secondary rounded-2xl flex items-center justify-center mb-6">

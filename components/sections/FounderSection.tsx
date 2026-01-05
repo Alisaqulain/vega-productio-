@@ -2,11 +2,24 @@
 
 import { motion } from 'framer-motion'
 import { Award, Briefcase, Users } from 'lucide-react'
+import dynamic from 'next/dynamic'
+
+const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground'), {
+  ssr: false,
+})
 
 export default function FounderSection() {
   return (
-    <section className="section-padding">
-      <div className="container-custom">
+    <section className="relative section-padding overflow-hidden">
+      {/* Parallax background - same style as services page */}
+      <ParallaxBackground
+        imageSrc="/meeting 2.png"
+        blur={2}
+        overlayOpacity={0.25}
+        speed={0.3}
+      />
+      
+      <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -24,10 +37,18 @@ export default function FounderSection() {
 
         <div className="max-w-4xl mx-auto">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: false, margin: '-50px' }}
+            transition={{
+              duration: 0.9,
+              ease: [0.25, 0.1, 0.25, 1],
+            }}
+            whileHover={{
+              y: -8,
+              scale: 1.02,
+              transition: { duration: 0.4 },
+            }}
             className="glass-card p-8 md:p-12 rounded-2xl"
           >
             <div className="grid md:grid-cols-3 gap-8 items-center mb-8">
