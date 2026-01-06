@@ -4,8 +4,9 @@ import MissionVision from '@/components/sections/MissionVision'
 import FounderSection from '@/components/sections/FounderSection'
 import CoreValues from '@/components/sections/CoreValues'
 import PageHeader from '@/components/PageHeader'
+import ImageContentSection from '@/components/sections/ImageContentSection'
 
-const VideoSection = dynamic(() => import('@/components/sections/VideoSection'), {
+const HeroVideoBackground = dynamic(() => import('@/components/HeroVideoBackground'), {
   ssr: false,
 })
 
@@ -35,30 +36,41 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="pt-36 md:pt-44">
-      <PageHeader 
-        title="About The Vega Wealth"
-        subtitle="Your trusted partner in building lasting wealth and securing your financial future"
-        dubaiImage="/dubai1.png"
-      />
-      <VideoSection
-        videoSrc="/video1.mp4"
+    <>
+      {/* Premium background video - fixed behind everything */}
+      <div className="fixed inset-0 -z-10 w-full h-full">
+        <HeroVideoBackground 
+          videoSrc="/video1.mp4"
+          overlay="light"
+          overlayOpacity={0.2}
+        />
+      </div>
+      <div className="relative pt-36 md:pt-44">
+        <PageHeader 
+          title="About The Vega Wealth"
+          subtitle="Your trusted partner in building lasting wealth and securing your financial future"
+          dubaiImage="/dubai1.png"
+        />
+      <ImageContentSection
         title="Excellence in Financial Advisory"
+        imageSrc="/meeting 1.png"
+        imageAlt="Financial Advisory Excellence"
         content={
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               With over 15 years of experience in the UAE financial services industry, The Vega Wealth has established itself as a trusted partner for high-net-worth individuals, professionals, and families seeking expert financial guidance.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-white leading-relaxed">
               Our team of licensed financial advisors brings deep expertise in wealth management, investment advisory, and comprehensive financial planning, helping clients navigate complex financial decisions with confidence.
             </p>
           </div>
         }
       />
-      <MissionVision />
-      <FounderSection />
-      <CoreValues />
-    </div>
+        <MissionVision />
+        <FounderSection />
+        <CoreValues />
+      </div>
+    </>
   )
 }
 

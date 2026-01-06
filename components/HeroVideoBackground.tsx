@@ -27,9 +27,23 @@ export default function HeroVideoBackground({
       })
     }
 
+    const handleCanPlay = () => {
+      setIsLoaded(true)
+      video.play().catch(() => {
+        // Autoplay failed, user interaction required
+      })
+    }
+
+    // Try to play immediately
+    video.play().catch(() => {
+      // Autoplay failed, will try again on load
+    })
+
     video.addEventListener('loadeddata', handleLoadedData)
+    video.addEventListener('canplay', handleCanPlay)
     return () => {
       video.removeEventListener('loadeddata', handleLoadedData)
+      video.removeEventListener('canplay', handleCanPlay)
     }
   }, [])
 
@@ -38,7 +52,7 @@ export default function HeroVideoBackground({
     : `rgba(255, 255, 255, ${overlayOpacity})`
 
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden w-full h-full">
       {/* Background Video */}
       <video
         ref={videoRef}
@@ -47,11 +61,14 @@ export default function HeroVideoBackground({
         muted
         loop
         playsInline
+        preload="auto"
         className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
           isLoaded ? 'opacity-100' : 'opacity-0'
         }`}
         style={{
           filter: 'brightness(0.85) contrast(1.1)',
+          minWidth: '100%',
+          minHeight: '100%',
         }}
       />
       

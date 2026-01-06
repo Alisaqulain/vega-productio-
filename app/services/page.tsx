@@ -42,11 +42,11 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      {/* Premium background image - no video */}
+      {/* Background image */}
       <PageBackgroundImage 
-        imageSrc="/meeting 4.png"
+        imageSrc="/meeting1.avif"
         overlay="light"
-        overlayOpacity={0.4}
+        overlayOpacity={0.2}
       />
       <div className="pt-36 md:pt-44 relative z-10">
         <PageHeader 

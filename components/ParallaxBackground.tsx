@@ -33,13 +33,16 @@ export default function ParallaxBackground({
     return () => window.removeEventListener('scroll', handleScroll)
   }, [speed])
 
+  // Encode image path to handle spaces in filenames
+  const encodedImageSrc = imageSrc.replace(/ /g, '%20')
+  
   return (
     <div ref={ref} className="absolute inset-0 overflow-hidden z-0">
       {/* Parallax background image - clearly visible like services page */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${imageSrc})`,
+          backgroundImage: `url("${encodedImageSrc}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           transform: `translateY(${scrollY}px) scale(1.1)`,

@@ -57,11 +57,11 @@ const services = [
 export default function ServicesOverview() {
   return (
     <section className="relative section-padding overflow-hidden">
-      {/* Parallax background - same style as services page */}
+      {/* Parallax background - clear images */}
       <ParallaxBackground
-        imageSrc="/meeting 4.png"
-        blur={2}
-        overlayOpacity={0.25}
+        imageSrc="/meeting 8.png"
+        blur={0}
+        overlayOpacity={0.2}
         speed={0.3}
       />
       

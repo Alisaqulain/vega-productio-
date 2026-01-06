@@ -11,16 +11,16 @@ const ParallaxBackground = dynamic(() => import('@/components/ParallaxBackground
 export default function CTABanner() {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
-      {/* Parallax background - image clearly visible */}
+      {/* Parallax background - clear images */}
       <ParallaxBackground
         imageSrc="/meeting 1.png"
-        blur={2}
-        overlayOpacity={0.25}
+        blur={0}
+        overlayOpacity={0.15}
         speed={0.25}
       />
       
       {/* Dark overlay for text contrast - image still visible */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/40 via-neutral-800/35 to-primary-navy/40 z-[1]">
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-navy/30 via-neutral-800/25 to-primary-navy/30 z-[1]">
         {/* Subtle texture for depth */}
         <div 
           className="absolute inset-0 opacity-[0.02]"

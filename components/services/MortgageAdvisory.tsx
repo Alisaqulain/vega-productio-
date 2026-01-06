@@ -21,11 +21,11 @@ const benefits = [
 export default function MortgageAdvisory() {
   return (
     <section id="mortgage-advisory" className="relative section-padding overflow-hidden">
-      {/* Parallax background - clearly visible */}
+      {/* Parallax background - clear images */}
       <ParallaxBackground
         imageSrc="/dubai6.png"
-        blur={2}
-        overlayOpacity={0.25}
+        blur={0}
+        overlayOpacity={0.2}
         speed={0.3}
       />
       

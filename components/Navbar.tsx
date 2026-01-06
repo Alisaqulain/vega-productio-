@@ -34,7 +34,7 @@ export default function Navbar() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? 'bg-white/80 backdrop-blur-xl shadow-lg border-b border-neutral-200/30'
-          : 'bg-white/60 backdrop-blur-md'
+          : 'bg-white/0 backdrop-blur-md'
       }`}
     >
       <div className="container-custom">
@@ -43,7 +43,7 @@ export default function Navbar() {
           <Link href="/" className="group flex-shrink-0">
             <div className="relative w-32 h-32 md:w-40 md:h-40">
               <Image
-                src="/logo1.png"
+                src="/logo1-removebg-preview.png"
                 alt="The Vega Wealth"
                 fill
                 className="object-contain transition-opacity duration-300 group-hover:opacity-80"

@@ -27,10 +27,12 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="relative bg-gradient-to-b from-primary-navy via-neutral-800 to-primary-navy text-neutral-300 overflow-hidden">
+    <footer className="relative bg-gradient-to-b from-primary-navy via-neutral-800 to-primary-navy text-neutral-300 overflow-hidden z-20">
+      {/* Solid background to cover page background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary-navy via-neutral-800 to-primary-navy z-0" />
       {/* Subtle texture for depth */}
       <div 
-        className="absolute inset-0 opacity-[0.015]"
+        className="absolute inset-0 opacity-[0.015] z-[1]"
         style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E")`,
         }}

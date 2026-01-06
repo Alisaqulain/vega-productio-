@@ -21,11 +21,11 @@ const benefits = [
 export default function InsurancePlanning() {
   return (
     <section id="insurance-planning" className="relative section-padding overflow-hidden">
-      {/* Parallax background - clearly visible */}
+      {/* Parallax background - clear images */}
       <ParallaxBackground
         imageSrc="/dubai3.png"
-        blur={2}
-        overlayOpacity={0.25}
+        blur={0}
+        overlayOpacity={0.2}
         speed={0.3}
       />
       

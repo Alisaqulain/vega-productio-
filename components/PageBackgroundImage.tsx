@@ -15,13 +15,16 @@ export default function PageBackgroundImage({
     ? `rgba(15, 23, 42, ${overlayOpacity})` 
     : `rgba(255, 255, 255, ${overlayOpacity})`
 
+  // Encode image path to handle spaces in filenames
+  const encodedImageSrc = imageSrc.replace(/ /g, '%20')
+
   return (
     <div className="fixed inset-0 -z-10">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${imageSrc})`,
+          backgroundImage: `url("${encodedImageSrc}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',

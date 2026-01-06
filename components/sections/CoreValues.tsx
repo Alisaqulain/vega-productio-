@@ -50,11 +50,11 @@ const values = [
 export default function CoreValues() {
   return (
     <section className="relative section-padding overflow-hidden">
-      {/* Parallax background - same style as services page */}
+      {/* Parallax background - clear images */}
       <ParallaxBackground
         imageSrc="/meeting 8.png"
-        blur={2}
-        overlayOpacity={0.25}
+        blur={0}
+        overlayOpacity={0.2}
         speed={0.3}
       />
       
