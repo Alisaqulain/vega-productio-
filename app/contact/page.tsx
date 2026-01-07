@@ -25,11 +25,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact Us - The Vega Wealth | Dubai Financial Advisory',
     description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai, UAE. Schedule a free consultation today.',
-    url: 'https://vegawalth.com/contact',
+    url: 'https://thevegawealth.com/contact',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/contact',
+    canonical: 'https://thevegawealth.com/contact',
   },
 }
 

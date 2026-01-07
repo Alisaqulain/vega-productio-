@@ -15,11 +15,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Terms of Service - The Vega Wealth | Terms & Conditions',
     description: 'Terms of Service for The Vega Wealth. Read our terms and conditions for using our financial advisory services in Dubai, UAE.',
-    url: 'https://vegawalth.com/terms',
+    url: 'https://thevegawealth.com/terms',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/terms',
+    canonical: 'https://thevegawealth.com/terms',
   },
   robots: {
     index: true,

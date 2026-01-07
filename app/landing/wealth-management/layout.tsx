@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Wealth Management Dubai - Expert Financial Advisory | The Vega Wealth',
     description: 'Professional wealth management services in Dubai. Expert financial advisors managing AED 2B+ in assets.',
-    url: 'https://vegawalth.com/landing/wealth-management',
+    url: 'https://thevegawealth.com/landing/wealth-management',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/landing/wealth-management',
+    canonical: 'https://thevegawealth.com/landing/wealth-management',
   },
   robots: {
     index: true,

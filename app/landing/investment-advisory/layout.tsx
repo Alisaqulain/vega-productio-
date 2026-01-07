@@ -14,11 +14,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Investment Advisory Dubai - Expert Portfolio Management | The Vega Wealth',
     description: 'Professional investment advisory services in Dubai. Expert portfolio management for NRI investors.',
-    url: 'https://vegawalth.com/landing/investment-advisory',
+    url: 'https://thevegawealth.com/landing/investment-advisory',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/landing/investment-advisory',
+    canonical: 'https://thevegawealth.com/landing/investment-advisory',
   },
   robots: {
     index: true,

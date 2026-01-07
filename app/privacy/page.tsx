@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Privacy Policy - The Vega Wealth | Data Protection & Privacy',
     description: 'Privacy Policy for The Vega Wealth. Learn how we protect your personal information in compliance with UAE data protection regulations.',
-    url: 'https://vegawalth.com/privacy',
+    url: 'https://thevegawealth.com/privacy',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/privacy',
+    canonical: 'https://thevegawealth.com/privacy',
   },
   robots: {
     index: true,

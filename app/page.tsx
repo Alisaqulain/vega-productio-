@@ -16,14 +16,20 @@ const CTABanner = dynamic(() => import('@/components/sections/CTABanner'), {
 })
 
 export const metadata: Metadata = {
-  title: 'The Vega Wealth - Your Path to Prosperity | Financial Advisory Dubai',
-  description: 'Premium wealth management, financial planning, and investment advisory services in Dubai, UAE. Expert financial advisors for NRI investors, professionals, and HNIs. Licensed & regulated financial advisory firm managing AED 2B+ in assets.',
+  title: 'The Vega Wealth | Vega Wealth Dubai | Wealth Management Company Dubai',
+  description: 'The Vega Wealth - Leading wealth management company in Dubai, UAE. Expert financial advisory services for investors, high-net-worth individuals, and business owners. Vega Wealth Dubai offers comprehensive wealth management, investment advisory, and financial planning services.',
   keywords: [
+    'thevegawealth',
+    'vega wealth',
+    'vega wealth dubai',
+    'wealth management company in dubai',
+    'financial advisory services dubai',
+    'The Vega Wealth',
+    'Vega Wealth Dubai',
     'Wealth Management Dubai',
     'Financial Advisor Dubai',
     'Investment Advisory UAE',
     'Financial Planning Dubai',
-    'NRI Wealth Management UAE',
     'Best Financial Advisor Dubai',
     'Top Wealth Management Dubai',
     'Dubai Financial Services',
@@ -31,13 +37,13 @@ export const metadata: Metadata = {
     'Portfolio Management Dubai',
   ],
   openGraph: {
-    title: 'The Vega Wealth - Your Path to Prosperity | Financial Advisory Dubai',
-    description: 'Premium wealth management, financial planning, and investment advisory services in Dubai, UAE. Expert financial advisors for NRI investors, professionals, and HNIs.',
-    url: 'https://vegawalth.com',
+    title: 'The Vega Wealth | Vega Wealth Dubai | Wealth Management Company Dubai',
+    description: 'The Vega Wealth - Leading wealth management company in Dubai, UAE. Expert financial advisory services for investors, high-net-worth individuals, and business owners.',
+    url: 'https://thevegawealth.com',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com',
+    canonical: 'https://thevegawealth.com',
   },
 }
 

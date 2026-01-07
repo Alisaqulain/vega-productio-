@@ -45,9 +45,9 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vegawalth.com'),
+  metadataBase: new URL('https://thevegawealth.com'),
   title: {
-    default: 'The Vega Wealth - Your Path to Prosperity | Financial Advisory Dubai',
+    default: 'The Vega Wealth | Vega Wealth Dubai | Wealth Management Company Dubai',
     template: '%s | The Vega Wealth - Financial Advisory Dubai',
   },
   description: 'Premium wealth management, financial planning, and investment advisory services in Dubai, UAE. Expert financial advisors for NRI investors, professionals, and HNIs. Licensed & regulated financial advisory firm.',
@@ -89,9 +89,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://vegawalth.com',
+    url: 'https://thevegawealth.com',
     siteName: 'The Vega Wealth',
-    title: 'The Vega Wealth - Your Path to Prosperity | Financial Advisory Dubai',
+    title: 'The Vega Wealth | Vega Wealth Dubai | Wealth Management Company Dubai',
     description: 'Premium wealth management, financial planning, and investment advisory services in Dubai, UAE. Expert financial advisors for NRI investors, professionals, and HNIs.',
     images: [
       {
@@ -104,7 +104,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Vega Wealth - Your Path to Prosperity | Financial Advisory Dubai',
+    title: 'The Vega Wealth | Vega Wealth Dubai | Wealth Management Company Dubai',
     description: 'Premium wealth management, financial planning, and investment advisory services in Dubai, UAE.',
     images: ['/logo1.png'],
     creator: '@vegawalth',
@@ -126,7 +126,7 @@ export const metadata: Metadata = {
     apple: '/logo1.png',
   },
   alternates: {
-    canonical: 'https://vegawalth.com',
+    canonical: 'https://thevegawealth.com',
   },
   category: 'Financial Services',
 }
@@ -141,7 +141,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo1.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo1.png" />
-        <link rel="canonical" href="https://vegawalth.com" />
+        <link rel="canonical" href="https://thevegawealth.com" />
         <meta name="geo.region" content="AE-DU" />
         <meta name="geo.placename" content="Dubai" />
         <meta name="geo.position" content="25.2048;55.2708" />
@@ -153,16 +153,16 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "FinancialService",
               "name": "The Vega Wealth",
-              "alternateName": "Vega Wealth Financial Advisory",
-              "description": "Premium wealth management, financial planning, and investment advisory services in Dubai, UAE. Expert financial advisors for NRI investors, professionals, and HNIs.",
-              "url": "https://vegawalth.com",
+              "alternateName": ["Vega Wealth", "Vega Wealth Dubai", "The Vega Wealth Dubai"],
+              "description": "The Vega Wealth - Leading wealth management company in Dubai, UAE. Expert financial advisory services for investors, high-net-worth individuals, and business owners. Vega Wealth Dubai offers comprehensive wealth management, investment advisory, and financial planning services.",
+              "url": "https://thevegawealth.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://vegawalth.com/logo1.png",
+                "url": "https://thevegawealth.com/logo1.png",
                 "width": 512,
                 "height": 512
               },
-              "image": "https://vegawalth.com/logo1.png",
+              "image": "https://thevegawealth.com/logo1.png",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Aspin Business Center, Sheikh Zayed Road",
@@ -234,14 +234,15 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "The Vega Wealth",
               "alternateName": "Vega Wealth",
-              "url": "https://vegawalth.com",
+              "additionalName": "Vega Wealth Dubai",
+              "url": "https://thevegawealth.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://vegawalth.com/logo1.png",
+                "url": "https://thevegawealth.com/logo1.png",
                 "width": 512,
                 "height": 512
               },
-              "image": "https://vegawalth.com/logo1.png",
+              "image": "https://thevegawealth.com/logo1.png",
               "description": "Premium wealth management and financial advisory services in Dubai, UAE",
               "address": {
                 "@type": "PostalAddress",
@@ -277,11 +278,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               "name": "The Vega Wealth",
-              "image": "https://vegawalth.com/logo1.png",
-              "@id": "https://vegawalth.com",
-              "url": "https://vegawalth.com",
+              "alternateName": "Vega Wealth Dubai",
+              "image": "https://thevegawealth.com/logo1.png",
+              "@id": "https://thevegawealth.com",
+              "url": "https://thevegawealth.com",
               "telephone": "+971-50-257-5675",
               "priceRange": "$$",
+              "description": "The Vega Wealth - Leading wealth management company in Dubai, UAE. Expert financial advisory services for investors, high-net-worth individuals, and business owners.",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Aspin Business Center, Sheikh Zayed Road",

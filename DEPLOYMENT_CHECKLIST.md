@@ -21,7 +21,7 @@ NEXT_PUBLIC_WHATSAPP_NUMBER=971501234567
 OPENAI_API_KEY=your-openai-api-key
 
 # Site URL
-NEXT_PUBLIC_SITE_URL=https://vegawalth.com
+NEXT_PUBLIC_SITE_URL=https://thevegawealth.com
 ```
 
 ### 2. Assets

@@ -12,9 +12,11 @@ const PageBackgroundImage = dynamic(() => import('@/components/PageBackgroundIma
 })
 
 export const metadata: Metadata = {
-  title: 'Our Services - The Vega Wealth | Financial Advisory Services Dubai',
-  description: 'Comprehensive financial services including wealth management, investment advisory, insurance planning, estate planning, and mortgage advisory in Dubai, UAE. Expert financial planning for NRI investors, professionals, and HNIs.',
+  title: 'Financial Advisory Services Dubai | The Vega Wealth | Wealth Management Company',
+  description: 'Comprehensive financial advisory services in Dubai, UAE. The Vega Wealth offers wealth management, investment advisory, insurance planning, estate planning, and mortgage advisory. Expert financial planning for investors, high-net-worth individuals, and business owners.',
   keywords: [
+    'financial advisory services dubai',
+    'wealth management company in dubai',
     'Financial Services Dubai',
     'Wealth Management Services Dubai',
     'Investment Advisory Services UAE',
@@ -26,16 +28,17 @@ export const metadata: Metadata = {
     'Retirement Planning Dubai',
     'Tax Planning Services Dubai',
     'NRI Financial Services UAE',
-    'Financial Advisory Services Dubai',
+    'The Vega Wealth Services',
+    'Vega Wealth Dubai Services',
   ],
   openGraph: {
     title: 'Our Services - The Vega Wealth | Financial Advisory Services Dubai',
     description: 'Comprehensive financial services for wealth management, investment, insurance, estate, and mortgage advisory in Dubai, UAE.',
-    url: 'https://vegawalth.com/services',
+    url: 'https://thevegawealth.com/services',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/services',
+    canonical: 'https://thevegawealth.com/services',
   },
 }
 
@@ -50,8 +53,8 @@ export default function ServicesPage() {
       />
       <div className="pt-36 md:pt-44 relative z-10">
         <PageHeader 
-          title="Our Services"
-          subtitle="Comprehensive financial solutions tailored to your unique needs"
+          title="Financial Advisory Services Dubai"
+          subtitle="Comprehensive wealth management and financial advisory solutions tailored to your unique needs in Dubai, UAE"
           dubaiImage="/dubai2.png"
         />
         <FinancialPlanning />

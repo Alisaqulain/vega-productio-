@@ -11,10 +11,12 @@ const HeroVideoBackground = dynamic(() => import('@/components/HeroVideoBackgrou
 })
 
 export const metadata: Metadata = {
-  title: 'About Us - The Vega Wealth | Our Mission & Vision | Financial Advisory Dubai',
-  description: 'Learn about The Vega Wealth, our mission, vision, and core values. Leading financial advisory firm in Dubai, UAE with 15+ years of experience. Trusted by 500+ clients managing AED 2B+ in assets.',
+  title: 'About The Vega Wealth | Vega Wealth Dubai | Financial Advisory Firm Dubai',
+  description: 'Learn about The Vega Wealth - leading wealth management company in Dubai, UAE. Our mission, vision, and core values. Trusted by 500+ clients managing AED 2B+ in assets. Vega Wealth Dubai offers expert financial advisory services.',
   keywords: [
     'About The Vega Wealth',
+    'Vega Wealth Dubai',
+    'The Vega Wealth Dubai',
     'Financial Advisory Firm Dubai',
     'Wealth Management Company Dubai',
     'Financial Advisor Dubai History',
@@ -26,11 +28,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About Us - The Vega Wealth | Financial Advisory Dubai',
     description: 'Learn about The Vega Wealth, our mission, vision, and core values. Leading financial advisory firm in Dubai, UAE.',
-    url: 'https://vegawalth.com/about',
+    url: 'https://thevegawealth.com/about',
     images: ['/logo1.png'],
   },
   alternates: {
-    canonical: 'https://vegawalth.com/about',
+    canonical: 'https://thevegawealth.com/about',
   },
 }
 
@@ -47,21 +49,21 @@ export default function AboutPage() {
       </div>
       <div className="relative pt-36 md:pt-44">
         <PageHeader 
-          title="About The Vega Wealth"
-          subtitle="Your trusted partner in building lasting wealth and securing your financial future"
+          title="About The Vega Wealth - Leading Wealth Management Company in Dubai"
+          subtitle="Your trusted partner in building lasting wealth and securing your financial future in Dubai, UAE"
           dubaiImage="/dubai1.png"
         />
       <ImageContentSection
-        title="Excellence in Financial Advisory"
+        title="The Vega Wealth - Excellence in Financial Advisory Dubai"
         imageSrc="/meeting 1.png"
-        imageAlt="Financial Advisory Excellence"
+        imageAlt="The Vega Wealth Financial Advisory Excellence in Dubai"
         content={
           <div className="space-y-6">
             <p className="text-lg text-white leading-relaxed">
-              With over 15 years of experience in the UAE financial services industry, The Vega Wealth has established itself as a trusted partner for high-net-worth individuals, professionals, and families seeking expert financial guidance.
+              With over 15 years of experience in the UAE financial services industry, The Vega Wealth has established itself as a trusted wealth management company in Dubai for high-net-worth individuals, professionals, and families seeking expert financial guidance.
             </p>
             <p className="text-lg text-white leading-relaxed">
-              Our team of licensed financial advisors brings deep expertise in wealth management, investment advisory, and comprehensive financial planning, helping clients navigate complex financial decisions with confidence.
+              Our team of licensed financial advisors brings deep expertise in wealth management, investment advisory, and comprehensive financial planning, helping clients navigate complex financial decisions with confidence. Vega Wealth Dubai is your trusted partner for all financial advisory services.
             </p>
           </div>
         }

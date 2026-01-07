@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://vegawalth.com'
+  const baseUrl = 'https://thevegawealth.com'
   const currentDate = new Date()
 
   return [
@@ -79,6 +79,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/landing/investment-advisory`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/wealth-management-dubai`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/why-choose-vega-wealth`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/investment-advisory-uae`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,

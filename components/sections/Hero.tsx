@@ -28,11 +28,11 @@ export default function Hero() {
             className="space-y-6 md:space-y-8"
           >
             <h1 className="heading-large text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-4 md:mb-6 leading-tight">
-              Trusted Financial Guidance<br className="hidden md:block" /> for Your Future
+              The Vega Wealth<br className="hidden md:block" /> Your Trusted Wealth Management Company in Dubai
             </h1>
             
             <p className="text-lg sm:text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto font-normal">
-              Helping You Preserve and Grow Your Wealth
+              Premium Financial Advisory Services in Dubai, UAE. Expert Wealth Management for Investors, High-Net-Worth Individuals, and Business Owners
             </p>
 
             <div className="pt-4 md:pt-6">
