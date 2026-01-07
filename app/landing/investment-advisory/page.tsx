@@ -173,7 +173,7 @@ export default function InvestmentAdvisoryLanding() {
               <ArrowRight className="ml-2" size={20} />
             </a>
             <a
-              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971501234567'}?text=${encodeURIComponent("Hello, I'm interested in your investment advisory services.")}`}
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971502575675'}?text=${encodeURIComponent("Hello, I'm interested in your investment advisory services.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-4 rounded-lg font-semibold transition-all inline-flex items-center justify-center"

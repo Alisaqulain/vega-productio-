@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { trackWhatsAppClick } from '@/lib/tracking'
 
 export default function WhatsAppButton() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971501234567'
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971502575675'
   const defaultMessage = encodeURIComponent(
     "Hello Vega Wealth, I'm interested in your financial advisory services."
   )

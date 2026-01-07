@@ -234,9 +234,9 @@ export default function TermsPage() {
                 If you have questions about these Terms of Service, please contact us:
               </p>
               <div className="space-y-2 text-gray-700">
-                <p><strong>Email:</strong> <a href="mailto:legal@vegawalth.com" className="text-primary-blue hover:underline">legal@vegawalth.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+971501234567" className="text-primary-blue hover:underline">+971 50 123 4567</a></p>
-                <p><strong>Address:</strong> Dubai, United Arab Emirates</p>
+                <p><strong>Email:</strong> <a href="mailto:Info@vegawealth.com" className="text-primary-blue hover:underline">Info@vegawealth.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+971502575675" className="text-primary-blue hover:underline">+971 50 257 5675</a></p>
+                <p><strong>Address:</strong> Aspin Business Center, Sheikh Zayed Road, Dubai, UAE</p>
               </div>
             </section>
 

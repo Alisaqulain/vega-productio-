@@ -7,7 +7,7 @@ import { trackPhoneClick } from '@/lib/tracking'
 
 export default function Footer() {
   const handlePhoneClick = () => {
-    trackPhoneClick('+971501234567')
+    trackPhoneClick('+971502575675')
   }
   const currentYear = new Date().getFullYear()
 
@@ -136,26 +136,28 @@ export default function Footer() {
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="mt-0.5 text-neutral-400 flex-shrink-0" />
                 <span className="text-sm text-neutral-400">
-                  Dubai, United Arab Emirates
+                  Aspin Business Center<br />
+                  Sheikh Zayed Road<br />
+                  Dubai, UAE
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-neutral-400 flex-shrink-0" />
                 <a
-                  href="tel:+971501234567"
+                  href="tel:+971502575675"
                   onClick={handlePhoneClick}
                   className="text-sm text-neutral-400 hover:text-white transition-colors"
                 >
-                  +971 50 123 4567
+                  +971 50 257 5675
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-neutral-400 flex-shrink-0" />
                 <a
-                  href="mailto:Accounts@thevegawealth.com"
+                  href="mailto:Info@vegawealth.com"
                   className="text-sm text-neutral-400 hover:text-white transition-colors"
                 >
-                  Accounts@thevegawealth.com
+                  Info@vegawealth.com
                 </a>
               </li>
             </ul>

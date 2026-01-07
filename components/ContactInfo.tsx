@@ -5,7 +5,7 @@ import { Mail, Phone, MapPin, Clock, MessageCircle } from 'lucide-react'
 import { trackPhoneClick, trackWhatsAppClick } from '@/lib/tracking'
 
 export default function ContactInfo() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971501234567'
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971502575675'
   const defaultMessage = encodeURIComponent(
     "Hello Vega Wealth, I'm interested in your financial advisory services."
   )
@@ -17,7 +17,7 @@ export default function ContactInfo() {
   }
 
   const handlePhoneClick = () => {
-    trackPhoneClick('+971501234567')
+    trackPhoneClick('+971502575675')
   }
 
   return (
@@ -43,7 +43,9 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold text-lg mb-1 text-gray-900">Office Address</h3>
             <p className="text-gray-600">
-              Dubai, United Arab Emirates
+              Aspin Business Center<br />
+              Sheikh Zayed Road<br />
+              Dubai, UAE
             </p>
           </div>
         </div>
@@ -57,11 +59,11 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold text-lg mb-1 text-gray-900">Phone</h3>
             <a
-              href="tel:+971501234567"
+              href="tel:+971502575675"
               onClick={handlePhoneClick}
               className="text-primary-blue hover:underline"
             >
-              +971 50 123 4567
+              +971 50 257 5675
             </a>
           </div>
         </div>
@@ -75,10 +77,10 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold text-lg mb-1 text-gray-900">Email</h3>
             <a
-              href="mailto:info@vegawalth.com"
+              href="mailto:Info@vegawealth.com"
               className="text-primary-blue hover:underline"
             >
-              info@vegawalth.com
+              Info@vegawealth.com
             </a>
           </div>
         </div>

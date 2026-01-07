@@ -21,7 +21,7 @@ export default function ThankYouPage() {
   }, [])
 
   const handlePhoneClick = () => {
-    trackPhoneClick('+971501234567')
+    trackPhoneClick('+971502575675')
   }
 
   const handleWhatsAppClick = () => {
@@ -86,7 +86,7 @@ export default function ThankYouPage() {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="tel:+971501234567"
+            href="tel:+971502575675"
             onClick={handlePhoneClick}
             className="btn-primary inline-flex items-center justify-center"
           >
@@ -94,7 +94,7 @@ export default function ThankYouPage() {
             Call Us Now
           </a>
           <a
-            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971501234567'}?text=${encodeURIComponent("Hello Vega Wealth, I just submitted an enquiry and would like to speak with you.")}`}
+            href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971502575675'}?text=${encodeURIComponent("Hello Vega Wealth, I just submitted an enquiry and would like to speak with you.")}`}
             onClick={handleWhatsAppClick}
             target="_blank"
             rel="noopener noreferrer"

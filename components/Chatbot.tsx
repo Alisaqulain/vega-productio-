@@ -37,15 +37,15 @@ const faqData = [
   // Contact & Communication
   {
     keywords: ['contact', 'email', 'phone', 'reach', 'get in touch', 'contact us'],
-    response: 'You can reach us at Accounts@thevegawealth.com or call +971 50 123 4567. You can also fill out our contact form on the website or use the WhatsApp button for immediate assistance. We\'re available Monday to Friday, 9 AM to 6 PM GST.',
+    response: 'You can reach us at Info@vegawealth.com or call +971 50 257 5675. You can also fill out our contact form on the website or use the WhatsApp button for immediate assistance. We\'re available Monday to Friday, 9 AM to 6 PM GST.',
   },
   {
     keywords: ['location', 'address', 'office', 'where are you', 'dubai office'],
-    response: 'Our office is located in Dubai, United Arab Emirates. We serve clients across the UAE and internationally. For specific address details, please contact us via email or phone, and we\'ll be happy to provide our office location and schedule a meeting.',
+    response: 'Our office is located at Aspin Business Center, Sheikh Zayed Road, Dubai, UAE. We serve clients across the UAE and internationally. Please contact us via email or phone, and we\'ll be happy to schedule a meeting.',
   },
   {
     keywords: ['appointment', 'consultation', 'meeting', 'schedule', 'book'],
-    response: 'We offer free initial consultations to discuss your financial goals. You can schedule an appointment by calling +971 50 123 4567, emailing Accounts@thevegawealth.com, or filling out our contact form. We also offer virtual consultations for your convenience.',
+    response: 'We offer free initial consultations to discuss your financial goals. You can schedule an appointment by calling +971 50 257 5675, emailing Info@vegawealth.com, or filling out our contact form. We also offer virtual consultations for your convenience.',
   },
   
   // Fees & Pricing

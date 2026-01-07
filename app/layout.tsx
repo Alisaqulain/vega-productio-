@@ -165,6 +165,7 @@ export default function RootLayout({
               "image": "https://vegawalth.com/logo1.png",
               "address": {
                 "@type": "PostalAddress",
+                "streetAddress": "Aspin Business Center, Sheikh Zayed Road",
                 "addressLocality": "Dubai",
                 "addressRegion": "Dubai",
                 "addressCountry": "AE",
@@ -251,8 +252,8 @@ export default function RootLayout({
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Service",
-                "telephone": "+971-50-123-4567",
-                "email": "Accounts@thevegawealth.com",
+                "telephone": "+971-50-257-5675",
+                "email": "Info@vegawealth.com",
                 "areaServed": "AE",
                 "availableLanguage": ["English", "Arabic", "Hindi", "Urdu"]
               },
@@ -279,11 +280,11 @@ export default function RootLayout({
               "image": "https://vegawalth.com/logo1.png",
               "@id": "https://vegawalth.com",
               "url": "https://vegawalth.com",
-              "telephone": "+971-50-123-4567",
+              "telephone": "+971-50-257-5675",
               "priceRange": "$$",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Dubai",
+                "streetAddress": "Aspin Business Center, Sheikh Zayed Road",
                 "addressLocality": "Dubai",
                 "addressRegion": "Dubai",
                 "postalCode": "00000",

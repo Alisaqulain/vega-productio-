@@ -18,12 +18,12 @@ export default function MobileStickyCTA() {
   }, [])
 
   const handlePhoneClick = () => {
-    trackPhoneClick('+971501234567')
+    trackPhoneClick('+971502575675')
   }
 
   const handleWhatsAppClick = () => {
     trackWhatsAppClick('sticky_mobile_cta')
-    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971501234567'
+    const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '971502575675'
     const message = encodeURIComponent("Hello Vega Wealth, I'm interested in your financial advisory services.")
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank')
   }
@@ -35,7 +35,7 @@ export default function MobileStickyCTA() {
       <div className="container-custom py-3">
         <div className="flex gap-3">
           <a
-            href="tel:+971501234567"
+            href="tel:+971502575675"
             onClick={handlePhoneClick}
             className="flex-1 bg-primary-navy text-white px-4 py-3 rounded-lg font-semibold text-sm flex items-center justify-center gap-2 hover:bg-primary-navy-dark transition-colors min-h-[48px]"
           >

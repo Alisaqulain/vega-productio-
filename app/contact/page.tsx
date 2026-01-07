@@ -11,7 +11,7 @@ const PageBackgroundImage = dynamic(() => import('@/components/PageBackgroundIma
 
 export const metadata: Metadata = {
   title: 'Contact Us - The Vega Wealth | Dubai Financial Advisory | Free Consultation',
-  description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai, UAE. Schedule a free consultation today. Call +971 50 123 4567 or email Accounts@thevegawealth.com',
+  description: 'Get in touch with The Vega Wealth for expert financial advisory services in Dubai, UAE. Schedule a free consultation today. Call +971 50 257 5675 or email Info@vegawealth.com',
   keywords: [
     'Contact Financial Advisor Dubai',
     'Financial Advisory Dubai Contact',

@@ -204,9 +204,9 @@ export default function PrivacyPage() {
                 If you have questions about this Privacy Policy or wish to exercise your rights, please contact us:
               </p>
               <div className="space-y-2 text-gray-700">
-                <p><strong>Email:</strong> <a href="mailto:privacy@vegawalth.com" className="text-primary-blue hover:underline">privacy@vegawalth.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+971501234567" className="text-primary-blue hover:underline">+971 50 123 4567</a></p>
-                <p><strong>Address:</strong> Dubai, United Arab Emirates</p>
+                <p><strong>Email:</strong> <a href="mailto:Info@vegawealth.com" className="text-primary-blue hover:underline">Info@vegawealth.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+971502575675" className="text-primary-blue hover:underline">+971 50 257 5675</a></p>
+                <p><strong>Address:</strong> Aspin Business Center, Sheikh Zayed Road, Dubai, UAE</p>
               </div>
             </section>
 
