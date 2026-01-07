@@ -37,7 +37,7 @@ const faqData = [
   // Contact & Communication
   {
     keywords: ['contact', 'email', 'phone', 'reach', 'get in touch', 'contact us'],
-    response: 'You can reach us at Info@vegawealth.com or call +971 50 257 5675. You can also fill out our contact form on the website or use the WhatsApp button for immediate assistance. We\'re available Monday to Friday, 9 AM to 6 PM GST.',
+    response: 'You can reach us at Info@thevegawealth.com or call +971 50 257 5675. You can also fill out our contact form on the website or use the WhatsApp button for immediate assistance. We\'re available Monday to Friday, 9 AM to 6 PM GST.',
   },
   {
     keywords: ['location', 'address', 'office', 'where are you', 'dubai office'],
@@ -45,7 +45,7 @@ const faqData = [
   },
   {
     keywords: ['appointment', 'consultation', 'meeting', 'schedule', 'book'],
-    response: 'We offer free initial consultations to discuss your financial goals. You can schedule an appointment by calling +971 50 257 5675, emailing Info@vegawealth.com, or filling out our contact form. We also offer virtual consultations for your convenience.',
+    response: 'We offer free initial consultations to discuss your financial goals. You can schedule an appointment by calling +971 50 257 5675, emailing Info@thevegawealth.com, or filling out our contact form. We also offer virtual consultations for your convenience.',
   },
   
   // Fees & Pricing

@@ -12,7 +12,7 @@ SMTP_PORT=587
 SMTP_USER=your-email@gmail.com
 SMTP_PASS=your-app-password
 SMTP_FROM=your-email@gmail.com
-SMTP_TO=info@vegawalth.com
+SMTP_TO=info@thevegawealth.com
 
 # WhatsApp Configuration
 NEXT_PUBLIC_WHATSAPP_NUMBER=971501234567

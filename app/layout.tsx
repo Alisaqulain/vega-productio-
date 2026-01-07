@@ -253,7 +253,7 @@ export default function RootLayout({
                 "@type": "ContactPoint",
                 "contactType": "Customer Service",
                 "telephone": "+971-50-257-5675",
-                "email": "Info@vegawealth.com",
+                "email": "Info@thevegawealth.com",
                 "areaServed": "AE",
                 "availableLanguage": ["English", "Arabic", "Hindi", "Urdu"]
               },

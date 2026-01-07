@@ -77,10 +77,10 @@ export default function ContactInfo() {
           <div>
             <h3 className="font-semibold text-lg mb-1 text-gray-900">Email</h3>
             <a
-              href="mailto:Info@vegawealth.com"
+              href="mailto:Info@thevegawealth.com"
               className="text-primary-blue hover:underline"
             >
-              Info@vegawealth.com
+              Info@thevegawealth.com
             </a>
           </div>
         </div>

@@ -154,10 +154,10 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-neutral-400 flex-shrink-0" />
                 <a
-                  href="mailto:Info@vegawealth.com"
+                  href="mailto:Info@thevegawealth.com"
                   className="text-sm text-neutral-400 hover:text-white transition-colors"
                 >
-                  Info@vegawealth.com
+                  Info@thevegawealth.com
                 </a>
               </li>
             </ul>
@@ -176,15 +176,6 @@ export default function Footer() {
             <Link href="/terms" className="text-sm text-neutral-400 hover:text-white transition-colors">
               Terms of Service
             </Link>
-            <span className="text-sm text-neutral-600">•</span>
-            <a
-              href="https://www.devspheresolutions.in/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-neutral-400 hover:text-white transition-colors"
-            >
-              Developed by <span className="font-medium">DevSphere Solutions</span>
-            </a>
           </div>
         </div>
       </div>

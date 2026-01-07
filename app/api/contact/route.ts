@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
     // Email content
     const mailOptions = {
       from: process.env.SMTP_FROM || process.env.SMTP_USER,
-      to: process.env.SMTP_TO || 'vegawealthllc@gmail.com',
+      to: process.env.SMTP_TO || 'thevegawealthllc@gmail.com',
       subject: 'New Enquiry – The Vega Wealth',
       html: `
         <!DOCTYPE html>
